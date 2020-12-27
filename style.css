@@ -13,3 +13,10 @@ body{background-color: #f6f9fc; font-family: -apple-system, BlinkMacSystemFont, 
 .controls__colors{display: flex;}
 .controls__colors .controls__color{width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);     margin: 0 2px; cursor: pointer;}
 .messageBox{display: block; min-width: 70%;}
+
+@media screen and (max-width: 768px) { 
+  .canvas{ width: 90%; height: calc(100vh - 80px);}
+  .controls__colors{ flex-wrap: wrap; max-width: 90%;}
+  .controls__colors .controls__color{margin: 5px;}
+  .messageBox{width: 90%;}
+}
